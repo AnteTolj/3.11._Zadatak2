@@ -5,15 +5,14 @@ class Main {
         String str = sc.nextLine();
         String rev = "";
 
-        //Breaking the sentence into words
+        //Razdvajanje rečenice u riječi
         String s[] = str.split(" ");
 
-        //Adding the words stored in the array to the last
+        //Dodavanje slova u string
         for(int j=0;j<s.length;j++){
             rev = s[j]+" "+rev;
         }
 
-        //Printing the reversed sentence
         System.out.println("Reversed sentence: " + rev);
     }
 }
